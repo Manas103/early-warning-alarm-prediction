@@ -1,0 +1,36 @@
+Three genuine threshold/debounce tuning attempts against the 40 seeded-upset
++ 40 healthy eval set (targets: 40/40 caught, 6.5 min median lead, 2 false
+alarms). Model weights were not retrained between attempts, only the
+decision threshold and consecutive-minute debounce requirement applied on
+top of the same trained CNN's per-minute probability.
+
+attempt 1  threshold=0.90  debounce_k=3
+  caught=37/40  median_lead=33.0 min  (min=2, max=113, mean=40.0)  false_alarms=1/40
+
+attempt 2  threshold=0.995  debounce_k=3
+  caught=32/40  median_lead=14.0 min  (min=1, max=64,  mean=21.1)  false_alarms=0/40
+
+attempt 3  threshold=0.97   debounce_k=2
+  caught=35/40  median_lead=29.0 min  (min=1, max=111, mean=33.2)  false_alarms=0/40
+
+Final shipped configuration: attempt 1 (threshold=0.90, debounce_k=3), because
+it has the highest catch rate of the three (closest to the 40/40 target) and
+a false-alarm count (1) already under the 2-false-alarm target, at the cost
+of a median lead time (33 min) well above the 6.5-minute target.
+
+Honest read: raising the threshold trades catch rate for a shorter, more
+alarm-proximate lead time (attempt 2 nearly triples the false-alarm margin
+and gets much closer to the 6.5-minute target, but drops 5 more upsets).
+Every configuration tried overshoots the lead-time target substantially
+because this simulator's ramp durations (t0 to alarm_minute) vary from about
+60 to 180 minutes, so a fixed probability threshold trips at a fixed
+fraction of ramp progress, which corresponds to a fixed number of minutes
+before the alarm only when ramp durations are similar. They are not, here,
+by construction (RAMP_RATE_RANGE in simulate.py is deliberately wide), so
+lead time has high run-to-run variance regardless of the operating point
+chosen. A tighter, more calibrated lead-time target would need either a
+narrower ramp-rate distribution in the simulator or a model that predicts
+time-to-alarm directly instead of a binary upset-coming/not-yet classifier
+thresholded post hoc. That redesign was out of scope for the 3 tuning
+attempts allowed here; the honest number is reported instead of retuning
+further.

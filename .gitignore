@@ -1,0 +1,34 @@
+# C++ build outputs
+build/
+out/
+cpp/build/
+*.o
+*.obj
+*.exe
+*.dll
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Node / React
+node_modules/
+react-console/dist/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Regenerable simulated eval data (80 run binaries + 80 per-run prediction
+# JSON files + manifest): regenerate with, in order,
+#   python/generate_eval_runs.py       (writes data/eval_runs/*.bin + manifest.json + scripts/_wsl_run_eval_generated.sh)
+#   bash scripts/_wsl_run_eval_generated.sh   (run from WSL, invokes the built edge_scorer once per run)
+#   python/compute_eval_metrics.py     (writes docs/eval_output.txt + docs/eval_summary.json)
+#   python/build_console_sample.py     (writes react-console/public/sample_predictions.json)
+data/eval_runs/
+
+# generated one-off helper script (recreated by python/generate_eval_runs.py)
+scripts/_wsl_run_eval_generated.sh

@@ -1,0 +1,9 @@
+{
+  "threshold": 0.9,
+  "debounce_k": 3,
+  "n_upset": 40,
+  "n_healthy": 40,
+  "n_caught": 37,
+  "median_lead_minutes": 33,
+  "n_false_alarms": 1
+}

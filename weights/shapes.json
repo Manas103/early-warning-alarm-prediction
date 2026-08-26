@@ -1,0 +1,26 @@
+{
+  "conv1_weight": [
+    16,
+    24,
+    5
+  ],
+  "conv1_bias": [
+    16
+  ],
+  "conv2_weight": [
+    8,
+    16,
+    5
+  ],
+  "conv2_bias": [
+    8
+  ],
+  "fc_weight": [
+    1,
+    8
+  ],
+  "fc_bias": [
+    1
+  ],
+  "total_floats": 2593
+}

@@ -1,0 +1,737 @@
+{
+  "eval_summary": {
+    "threshold": 0.9,
+    "debounce_k": 3,
+    "n_upset": 40,
+    "n_healthy": 40,
+    "n_caught": 37,
+    "median_lead_minutes": 33,
+    "n_false_alarms": 1
+  },
+  "runs": [
+    {
+      "run_id": "upset_001_seed900001",
+      "is_upset_ground_truth": true,
+      "t0": 116,
+      "alarm_minute": 179,
+      "threshold": 0.9,
+      "debounce_k": 3,
+      "confirmed_prediction_minute": 159,
+      "events": [
+        {
+          "minute": 157,
+          "probability": 0.911548,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 1.89032
+            },
+            {
+              "channel": "flow_04",
+              "score": 0.983345
+            },
+            {
+              "channel": "flow_03",
+              "score": 0.918363
+            },
+            {
+              "channel": "vibration_05",
+              "score": 0.87154
+            }
+          ]
+        },
+        {
+          "minute": 158,
+          "probability": 0.923883,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 1.96395
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.00621
+            },
+            {
+              "channel": "flow_03",
+              "score": 0.95138
+            },
+            {
+              "channel": "vibration_05",
+              "score": 0.87244
+            }
+          ]
+        },
+        {
+          "minute": 159,
+          "probability": 0.93506,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 2.04752
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.01276
+            },
+            {
+              "channel": "flow_03",
+              "score": 0.955176
+            },
+            {
+              "channel": "vibration_05",
+              "score": 0.839424
+            }
+          ]
+        },
+        {
+          "minute": 160,
+          "probability": 0.944895,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 2.11182
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.0208
+            },
+            {
+              "channel": "flow_03",
+              "score": 0.948815
+            },
+            {
+              "channel": "vibration_05",
+              "score": 0.838761
+            }
+          ]
+        },
+        {
+          "minute": 161,
+          "probability": 0.953911,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 2.17906
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.05229
+            },
+            {
+              "channel": "flow_03",
+              "score": 0.972126
+            },
+            {
+              "channel": "vibration_05",
+              "score": 0.820597
+            }
+          ]
+        },
+        {
+          "minute": 162,
+          "probability": 0.962246,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 2.22866
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.07919
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.00737
+            },
+            {
+              "channel": "vibration_02",
+              "score": 0.807805
+            }
+          ]
+        },
+        {
+          "minute": 163,
+          "probability": 0.969508,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 2.29009
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.11763
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.0204
+            },
+            {
+              "channel": "vibration_02",
+              "score": 0.81877
+            }
+          ]
+        },
+        {
+          "minute": 164,
+          "probability": 0.975415,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 2.34288
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.13519
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.06253
+            },
+            {
+              "channel": "temperature_04",
+              "score": 0.836355
+            }
+          ]
+        },
+        {
+          "minute": 165,
+          "probability": 0.980132,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 2.42359
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.14372
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.09474
+            },
+            {
+              "channel": "temperature_04",
+              "score": 0.853184
+            }
+          ]
+        },
+        {
+          "minute": 166,
+          "probability": 0.984022,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 2.50951
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.17416
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.1465
+            },
+            {
+              "channel": "temperature_04",
+              "score": 0.856995
+            }
+          ]
+        },
+        {
+          "minute": 167,
+          "probability": 0.987021,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 2.58268
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.20552
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.18459
+            },
+            {
+              "channel": "temperature_04",
+              "score": 0.87907
+            }
+          ]
+        },
+        {
+          "minute": 168,
+          "probability": 0.989357,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 2.65932
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.23478
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.2016
+            },
+            {
+              "channel": "temperature_04",
+              "score": 0.885018
+            }
+          ]
+        },
+        {
+          "minute": 169,
+          "probability": 0.991219,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 2.73112
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.27561
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.21871
+            },
+            {
+              "channel": "temperature_04",
+              "score": 0.903088
+            }
+          ]
+        },
+        {
+          "minute": 170,
+          "probability": 0.99285,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 2.82678
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.30651
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.2457
+            },
+            {
+              "channel": "vibration_02",
+              "score": 0.919166
+            }
+          ]
+        },
+        {
+          "minute": 171,
+          "probability": 0.994205,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 2.92949
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.33223
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.28603
+            },
+            {
+              "channel": "temperature_04",
+              "score": 0.934219
+            }
+          ]
+        },
+        {
+          "minute": 172,
+          "probability": 0.995395,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 3.03604
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.33977
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.33305
+            },
+            {
+              "channel": "temperature_04",
+              "score": 0.954985
+            }
+          ]
+        },
+        {
+          "minute": 173,
+          "probability": 0.996462,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 3.14447
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.36613
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.36507
+            },
+            {
+              "channel": "temperature_04",
+              "score": 0.971374
+            }
+          ]
+        },
+        {
+          "minute": 174,
+          "probability": 0.997424,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 3.26901
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.4155
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.38724
+            },
+            {
+              "channel": "temperature_04",
+              "score": 0.978179
+            }
+          ]
+        },
+        {
+          "minute": 175,
+          "probability": 0.99817,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 3.36661
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.44657
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.41029
+            },
+            {
+              "channel": "temperature_04",
+              "score": 0.986397
+            }
+          ]
+        },
+        {
+          "minute": 176,
+          "probability": 0.998719,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 3.46667
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.4771
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.42216
+            },
+            {
+              "channel": "temperature_04",
+              "score": 0.974464
+            }
+          ]
+        },
+        {
+          "minute": 177,
+          "probability": 0.999112,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 3.57468
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.52156
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.44662
+            },
+            {
+              "channel": "vibration_02",
+              "score": 0.960385
+            }
+          ]
+        },
+        {
+          "minute": 178,
+          "probability": 0.999368,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 3.68953
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.57649
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.48294
+            },
+            {
+              "channel": "vibration_02",
+              "score": 0.989306
+            }
+          ]
+        },
+        {
+          "minute": 179,
+          "probability": 0.999528,
+          "contributors": [
+            {
+              "channel": "temperature_01",
+              "score": 3.80624
+            },
+            {
+              "channel": "flow_03",
+              "score": 1.62212
+            },
+            {
+              "channel": "flow_04",
+              "score": 1.53711
+            },
+            {
+              "channel": "vibration_02",
+              "score": 0.966141
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "upset_000_seed900000",
+      "is_upset_ground_truth": true,
+      "t0": 100,
+      "alarm_minute": 179,
+      "threshold": 0.9,
+      "debounce_k": 3,
+      "confirmed_prediction_minute": null,
+      "events": []
+    },
+    {
+      "run_id": "healthy_059_seed1000019",
+      "is_upset_ground_truth": false,
+      "t0": null,
+      "alarm_minute": null,
+      "threshold": 0.9,
+      "debounce_k": 3,
+      "confirmed_prediction_minute": 61,
+      "events": [
+        {
+          "minute": 59,
+          "probability": 0.940387,
+          "contributors": [
+            {
+              "channel": "vibration_05",
+              "score": 0.90532
+            },
+            {
+              "channel": "pressure_05",
+              "score": 0.882829
+            },
+            {
+              "channel": "pressure_03",
+              "score": 0.803033
+            },
+            {
+              "channel": "vibration_06",
+              "score": 0.775028
+            }
+          ]
+        },
+        {
+          "minute": 60,
+          "probability": 0.942486,
+          "contributors": [
+            {
+              "channel": "vibration_05",
+              "score": 0.900076
+            },
+            {
+              "channel": "pressure_05",
+              "score": 0.887714
+            },
+            {
+              "channel": "pressure_03",
+              "score": 0.795102
+            },
+            {
+              "channel": "vibration_06",
+              "score": 0.768056
+            }
+          ]
+        },
+        {
+          "minute": 61,
+          "probability": 0.943935,
+          "contributors": [
+            {
+              "channel": "pressure_05",
+              "score": 0.90017
+            },
+            {
+              "channel": "vibration_05",
+              "score": 0.896956
+            },
+            {
+              "channel": "pressure_03",
+              "score": 0.790682
+            },
+            {
+              "channel": "vibration_06",
+              "score": 0.780825
+            }
+          ]
+        },
+        {
+          "minute": 62,
+          "probability": 0.944849,
+          "contributors": [
+            {
+              "channel": "vibration_05",
+              "score": 0.887813
+            },
+            {
+              "channel": "pressure_05",
+              "score": 0.883682
+            },
+            {
+              "channel": "pressure_03",
+              "score": 0.790948
+            },
+            {
+              "channel": "vibration_06",
+              "score": 0.790691
+            }
+          ]
+        },
+        {
+          "minute": 63,
+          "probability": 0.941313,
+          "contributors": [
+            {
+              "channel": "pressure_05",
+              "score": 0.887154
+            },
+            {
+              "channel": "vibration_05",
+              "score": 0.860033
+            },
+            {
+              "channel": "vibration_06",
+              "score": 0.795589
+            },
+            {
+              "channel": "pressure_03",
+              "score": 0.793833
+            }
+          ]
+        },
+        {
+          "minute": 64,
+          "probability": 0.93409,
+          "contributors": [
+            {
+              "channel": "pressure_05",
+              "score": 0.889245
+            },
+            {
+              "channel": "vibration_05",
+              "score": 0.848507
+            },
+            {
+              "channel": "vibration_06",
+              "score": 0.800994
+            },
+            {
+              "channel": "pressure_03",
+              "score": 0.77273
+            }
+          ]
+        },
+        {
+          "minute": 65,
+          "probability": 0.923191,
+          "contributors": [
+            {
+              "channel": "pressure_05",
+              "score": 0.879594
+            },
+            {
+              "channel": "vibration_05",
+              "score": 0.851211
+            },
+            {
+              "channel": "vibration_06",
+              "score": 0.781963
+            },
+            {
+              "channel": "temperature_02",
+              "score": 0.762521
+            }
+          ]
+        },
+        {
+          "minute": 66,
+          "probability": 0.910811,
+          "contributors": [
+            {
+              "channel": "pressure_05",
+              "score": 0.875787
+            },
+            {
+              "channel": "vibration_05",
+              "score": 0.8676
+            },
+            {
+              "channel": "vibration_06",
+              "score": 0.770255
+            },
+            {
+              "channel": "temperature_02",
+              "score": 0.762067
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "healthy_040_seed1000000",
+      "is_upset_ground_truth": false,
+      "t0": null,
+      "alarm_minute": null,
+      "threshold": 0.9,
+      "debounce_k": 3,
+      "confirmed_prediction_minute": null,
+      "events": []
+    }
+  ]
+}

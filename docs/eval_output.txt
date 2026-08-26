@@ -1,0 +1,92 @@
+Early-warning alarm prediction: eval harness results
+threshold=0.9  debounce_k=3  window_minutes=60  run_length_min=180
+n_upset_runs=40  n_healthy_runs=40
+
+upsets caught: 37/40
+median lead time (caught upsets only): 33.00 minutes
+lead time min/max: 2/113 minutes, mean=40.00
+false alarms: 1/40
+
+--- per-upset-run detail ---
+  upset_000_seed900000         seed= 900000 t0=100 alarm_minute=179 confirmed_minute=none caught=False lead=None
+  upset_001_seed900001         seed= 900001 t0=116 alarm_minute=179 confirmed_minute= 159 caught=True  lead=20
+  upset_002_seed900002         seed= 900002 t0=107 alarm_minute=179 confirmed_minute= 166 caught=True  lead=13
+  upset_003_seed900003         seed= 900003 t0=112 alarm_minute=179 confirmed_minute= 155 caught=True  lead=24
+  upset_004_seed900004         seed= 900004 t0= 93 alarm_minute=179 confirmed_minute= 146 caught=True  lead=33
+  upset_005_seed900005         seed= 900005 t0= 63 alarm_minute=177 confirmed_minute= 127 caught=True  lead=50
+  upset_006_seed900006         seed= 900006 t0= 74 alarm_minute=178 confirmed_minute= 128 caught=True  lead=50
+  upset_007_seed900007         seed= 900007 t0= 82 alarm_minute=179 confirmed_minute=none caught=False lead=None
+  upset_008_seed900008         seed= 900008 t0= 70 alarm_minute=179 confirmed_minute= 123 caught=True  lead=56
+  upset_009_seed900009         seed= 900009 t0= 50 alarm_minute=142 confirmed_minute= 119 caught=True  lead=23
+  upset_010_seed900010         seed= 900010 t0= 73 alarm_minute=179 confirmed_minute= 166 caught=True  lead=13
+  upset_011_seed900011         seed= 900011 t0= 74 alarm_minute=175 confirmed_minute= 135 caught=True  lead=40
+  upset_012_seed900012         seed= 900012 t0= 43 alarm_minute=165 confirmed_minute=  86 caught=True  lead=79
+  upset_013_seed900013         seed= 900013 t0=105 alarm_minute=179 confirmed_minute= 156 caught=True  lead=23
+  upset_014_seed900014         seed= 900014 t0=101 alarm_minute=179 confirmed_minute= 159 caught=True  lead=20
+  upset_015_seed900015         seed= 900015 t0= 78 alarm_minute=179 confirmed_minute= 126 caught=True  lead=53
+  upset_016_seed900016         seed= 900016 t0= 68 alarm_minute=179 confirmed_minute= 111 caught=True  lead=68
+  upset_017_seed900017         seed= 900017 t0=113 alarm_minute=179 confirmed_minute= 159 caught=True  lead=20
+  upset_018_seed900018         seed= 900018 t0= 84 alarm_minute=179 confirmed_minute= 177 caught=True  lead=2
+  upset_019_seed900019         seed= 900019 t0=101 alarm_minute=179 confirmed_minute= 160 caught=True  lead=19
+  upset_020_seed900020         seed= 900020 t0= 47 alarm_minute=165 confirmed_minute=  91 caught=True  lead=74
+  upset_021_seed900021         seed= 900021 t0= 84 alarm_minute=179 confirmed_minute= 150 caught=True  lead=29
+  upset_022_seed900022         seed= 900022 t0=105 alarm_minute=179 confirmed_minute= 166 caught=True  lead=13
+  upset_023_seed900023         seed= 900023 t0= 48 alarm_minute=157 confirmed_minute= 122 caught=True  lead=35
+  upset_024_seed900024         seed= 900024 t0= 98 alarm_minute=179 confirmed_minute= 164 caught=True  lead=15
+  upset_025_seed900025         seed= 900025 t0= 86 alarm_minute=179 confirmed_minute= 121 caught=True  lead=58
+  upset_026_seed900026         seed= 900026 t0= 75 alarm_minute=176 confirmed_minute=  86 caught=True  lead=90
+  upset_027_seed900027         seed= 900027 t0= 61 alarm_minute=179 confirmed_minute= 121 caught=True  lead=58
+  upset_028_seed900028         seed= 900028 t0=109 alarm_minute=179 confirmed_minute= 149 caught=True  lead=30
+  upset_029_seed900029         seed= 900029 t0= 71 alarm_minute=175 confirmed_minute=none caught=False lead=None
+  upset_030_seed900030         seed= 900030 t0= 83 alarm_minute=179 confirmed_minute= 142 caught=True  lead=37
+  upset_031_seed900031         seed= 900031 t0= 46 alarm_minute=174 confirmed_minute= 145 caught=True  lead=29
+  upset_032_seed900032         seed= 900032 t0= 44 alarm_minute=142 confirmed_minute=  92 caught=True  lead=50
+  upset_033_seed900033         seed= 900033 t0= 46 alarm_minute=176 confirmed_minute=  63 caught=True  lead=113
+  upset_034_seed900034         seed= 900034 t0= 77 alarm_minute=179 confirmed_minute= 108 caught=True  lead=71
+  upset_035_seed900035         seed= 900035 t0= 60 alarm_minute=179 confirmed_minute= 157 caught=True  lead=22
+  upset_036_seed900036         seed= 900036 t0= 47 alarm_minute=151 confirmed_minute= 102 caught=True  lead=49
+  upset_037_seed900037         seed= 900037 t0= 84 alarm_minute=179 confirmed_minute= 153 caught=True  lead=26
+  upset_038_seed900038         seed= 900038 t0= 65 alarm_minute=179 confirmed_minute= 118 caught=True  lead=61
+  upset_039_seed900039         seed= 900039 t0= 41 alarm_minute=135 confirmed_minute= 121 caught=True  lead=14
+
+--- per-healthy-run detail ---
+  healthy_040_seed1000000      seed=1000000 confirmed_minute=none false_alarm=False
+  healthy_041_seed1000001      seed=1000001 confirmed_minute=none false_alarm=False
+  healthy_042_seed1000002      seed=1000002 confirmed_minute=none false_alarm=False
+  healthy_043_seed1000003      seed=1000003 confirmed_minute=none false_alarm=False
+  healthy_044_seed1000004      seed=1000004 confirmed_minute=none false_alarm=False
+  healthy_045_seed1000005      seed=1000005 confirmed_minute=none false_alarm=False
+  healthy_046_seed1000006      seed=1000006 confirmed_minute=none false_alarm=False
+  healthy_047_seed1000007      seed=1000007 confirmed_minute=none false_alarm=False
+  healthy_048_seed1000008      seed=1000008 confirmed_minute=none false_alarm=False
+  healthy_049_seed1000009      seed=1000009 confirmed_minute=none false_alarm=False
+  healthy_050_seed1000010      seed=1000010 confirmed_minute=none false_alarm=False
+  healthy_051_seed1000011      seed=1000011 confirmed_minute=none false_alarm=False
+  healthy_052_seed1000012      seed=1000012 confirmed_minute=none false_alarm=False
+  healthy_053_seed1000013      seed=1000013 confirmed_minute=none false_alarm=False
+  healthy_054_seed1000014      seed=1000014 confirmed_minute=none false_alarm=False
+  healthy_055_seed1000015      seed=1000015 confirmed_minute=none false_alarm=False
+  healthy_056_seed1000016      seed=1000016 confirmed_minute=none false_alarm=False
+  healthy_057_seed1000017      seed=1000017 confirmed_minute=none false_alarm=False
+  healthy_058_seed1000018      seed=1000018 confirmed_minute=none false_alarm=False
+  healthy_059_seed1000019      seed=1000019 confirmed_minute=  61 false_alarm=True
+  healthy_060_seed1000020      seed=1000020 confirmed_minute=none false_alarm=False
+  healthy_061_seed1000021      seed=1000021 confirmed_minute=none false_alarm=False
+  healthy_062_seed1000022      seed=1000022 confirmed_minute=none false_alarm=False
+  healthy_063_seed1000023      seed=1000023 confirmed_minute=none false_alarm=False
+  healthy_064_seed1000024      seed=1000024 confirmed_minute=none false_alarm=False
+  healthy_065_seed1000025      seed=1000025 confirmed_minute=none false_alarm=False
+  healthy_066_seed1000026      seed=1000026 confirmed_minute=none false_alarm=False
+  healthy_067_seed1000027      seed=1000027 confirmed_minute=none false_alarm=False
+  healthy_068_seed1000028      seed=1000028 confirmed_minute=none false_alarm=False
+  healthy_069_seed1000029      seed=1000029 confirmed_minute=none false_alarm=False
+  healthy_070_seed1000030      seed=1000030 confirmed_minute=none false_alarm=False
+  healthy_071_seed1000031      seed=1000031 confirmed_minute=none false_alarm=False
+  healthy_072_seed1000032      seed=1000032 confirmed_minute=none false_alarm=False
+  healthy_073_seed1000033      seed=1000033 confirmed_minute=none false_alarm=False
+  healthy_074_seed1000034      seed=1000034 confirmed_minute=none false_alarm=False
+  healthy_075_seed1000035      seed=1000035 confirmed_minute=none false_alarm=False
+  healthy_076_seed1000036      seed=1000036 confirmed_minute=none false_alarm=False
+  healthy_077_seed1000037      seed=1000037 confirmed_minute=none false_alarm=False
+  healthy_078_seed1000038      seed=1000038 confirmed_minute=none false_alarm=False
+  healthy_079_seed1000039      seed=1000039 confirmed_minute=none false_alarm=False
