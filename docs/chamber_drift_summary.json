@@ -1,0 +1,16 @@
+{
+  "k_sigma": 4.5,
+  "n_calibration_clean": 40,
+  "sibling_spread": {
+    "pressure": 0.36853825836221377,
+    "rf_forward": 0.6566546794129705,
+    "rf_reflected": 0.27256832219695065,
+    "gas_flow": 0.24760163648660172,
+    "oes_intensity": 7.677827892635199,
+    "endpoint": 2.3482717808961526
+  },
+  "n_drift_seeded": 40,
+  "n_drift_caught": 22,
+  "n_clean": 40,
+  "n_false_flags": 0
+}

@@ -1,7 +1,10 @@
-// Channel naming, generated the same way as python/simulate.py::CHANNEL_NAMES
-// (6 pressure, 6 temperature, 6 flow, 6 vibration, 1-indexed within group).
-// Kept as a function rather than a literal array so there is exactly one
-// place that encodes the group order/sizes.
+// Channel naming, generated the same way as python/simulate.py::CHANNEL_NAMES:
+// chamber-major layout, 4 simulated process chambers x 6 physical
+// quantities (chamber pressure, RF forward power, RF reflected power, gas
+// flow, optical emission intensity, endpoint signal) = 24 channels, channel
+// index = chamber_idx * 6 + quantity_idx. Kept as a function rather than a
+// literal array so there is exactly one place that encodes the chamber
+// count / quantity order.
 #pragma once
 
 #include <array>
@@ -13,13 +16,17 @@
 namespace ewap {
 
 inline std::array<std::string, kNChannels> channel_names() {
-    static const char* groups[4] = {"pressure", "temperature", "flow", "vibration"};
+    static const char* quantities[6] = {
+        "pressure", "rf_forward", "rf_reflected", "gas_flow", "oes_intensity", "endpoint"
+    };
+    static const int n_chambers = 4;
+    static const int n_quantities = 6;
     std::array<std::string, kNChannels> names{};
     int idx = 0;
-    for (int g = 0; g < 4; ++g) {
-        for (int i = 1; i <= 6; ++i) {
+    for (int c = 1; c <= n_chambers; ++c) {
+        for (int q = 0; q < n_quantities; ++q) {
             char buf[32];
-            std::snprintf(buf, sizeof(buf), "%s_%02d", groups[g], i);
+            std::snprintf(buf, sizeof(buf), "chamber%d_%s", c, quantities[q]);
             names[idx++] = buf;
         }
     }

@@ -1,21 +1,6 @@
--- The CXX compiler identification is GNU 11.4.0
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done
--- Generating done
--- Build files have been written to: /home/manas/build/early-warning-alarm-prediction/cpp/build
-[ 16%] Building CXX object CMakeFiles/edge_scorer.dir/src/scorer_main.cpp.o
-[ 33%] Building CXX object CMakeFiles/oracle_diff.dir/tests/oracle_diff_main.cpp.o
-[ 50%] Building CXX object CMakeFiles/test_model.dir/tests/test_model.cpp.o
-[ 66%] Linking CXX executable oracle_diff
-[ 66%] Built target oracle_diff
-[ 83%] Linking CXX executable test_model
-[100%] Linking CXX executable edge_scorer
-[100%] Built target test_model
-[100%] Built target edge_scorer
+Command: bash scripts/wsl_build_and_test.sh
+(WSL2 Ubuntu 22.04, g++ 11.4.0, -O3 Release build)
+
 === test_model ===
 test_normalization_load
   ok:   all 24 channel std values are positive
@@ -31,33 +16,34 @@ test_contribution_ranks_the_deviating_channel_first
   ok:   the one deliberately-deviated channel ranks as the top contributor
   ok:   top contributor's score strictly exceeds the runner-up's
 test_channel_names_are_unique_and_ordered
-  ok:   first channel name is pressure_01
-  ok:   7th channel name is temperature_01
-  ok:   13th channel name is flow_01
-  ok:   19th channel name is vibration_01
+  ok:   first channel name is chamber1_pressure
+  ok:   7th channel name is chamber2_pressure
+  ok:   13th channel name is chamber3_pressure
+  ok:   19th channel name is chamber4_pressure
+  ok:   6th channel name is chamber1_endpoint
   ok:   all 24 channel names are unique
 
-13/13 checks passed
+14/14 checks passed
 
 === oracle_diff ===
 oracle_diff: comparing 16 reference windows
-  sample  0: pytorch_logit=0.250377 cpp_logit=0.250378 diff=1.01328e-06 | pytorch_prob=0.562269 cpp_prob=0.562270 diff=2.98023e-07 OK
-  sample  1: pytorch_logit=-1.744031 cpp_logit=-1.744030 diff=1.43051e-06 | pytorch_prob=0.148802 cpp_prob=0.148802 diff=1.78814e-07 OK
-  sample  2: pytorch_logit=-1.747492 cpp_logit=-1.747490 diff=1.66893e-06 | pytorch_prob=0.148364 cpp_prob=0.148364 diff=1.93715e-07 OK
-  sample  3: pytorch_logit=-0.750033 cpp_logit=-0.750031 diff=1.43051e-06 | pytorch_prob=0.320814 cpp_prob=0.320815 diff=3.27826e-07 OK
-  sample  4: pytorch_logit=0.586357 cpp_logit=0.586359 diff=1.90735e-06 | pytorch_prob=0.642529 cpp_prob=0.642529 diff=4.76837e-07 OK
-  sample  5: pytorch_logit=-1.755343 cpp_logit=-1.755342 diff=5.96046e-07 | pytorch_prob=0.147375 cpp_prob=0.147375 diff=5.96046e-08 OK
-  sample  6: pytorch_logit=-0.623887 cpp_logit=-0.623885 diff=1.96695e-06 | pytorch_prob=0.348898 cpp_prob=0.348898 diff=4.17233e-07 OK
-  sample  7: pytorch_logit=-0.424709 cpp_logit=-0.424708 diff=1.2517e-06 | pytorch_prob=0.395391 cpp_prob=0.395391 diff=2.98023e-07 OK
-  sample  8: pytorch_logit=-0.143051 cpp_logit=-0.143050 diff=9.38773e-07 | pytorch_prob=0.464298 cpp_prob=0.464298 diff=2.68221e-07 OK
-  sample  9: pytorch_logit=-0.608538 cpp_logit=-0.608537 diff=1.54972e-06 | pytorch_prob=0.352393 cpp_prob=0.352393 diff=3.57628e-07 OK
-  sample 10: pytorch_logit=0.097589 cpp_logit=0.097590 diff=1.35601e-06 | pytorch_prob=0.524378 cpp_prob=0.524378 diff=2.98023e-07 OK
-  sample 11: pytorch_logit=-2.064160 cpp_logit=-2.064158 diff=1.43051e-06 | pytorch_prob=0.112629 cpp_prob=0.112630 diff=1.3411e-07 OK
-  sample 12: pytorch_logit=0.109646 cpp_logit=0.109647 diff=5.21541e-08 | pytorch_prob=0.527384 cpp_prob=0.527384 diff=0 OK
-  sample 13: pytorch_logit=-2.326080 cpp_logit=-2.326079 diff=1.19209e-06 | pytorch_prob=0.088986 cpp_prob=0.088986 diff=9.68575e-08 OK
-  sample 14: pytorch_logit=-0.359720 cpp_logit=-0.359719 diff=1.40071e-06 | pytorch_prob=0.411027 cpp_prob=0.411028 diff=3.27826e-07 OK
-  sample 15: pytorch_logit=-1.181877 cpp_logit=-1.181872 diff=4.41074e-06 | pytorch_prob=0.234715 cpp_prob=0.234716 diff=7.89762e-07 OK
+  sample  0: pytorch_logit=-0.782783 cpp_logit=-0.782786 diff=2.80142e-06 | pytorch_prob=0.313720 cpp_prob=0.313720 diff=5.96046e-07 OK
+  sample  1: pytorch_logit=1.098414 cpp_logit=1.098409 diff=5.00679e-06 | pytorch_prob=0.749963 cpp_prob=0.749962 diff=8.9407e-07 OK
+  sample  2: pytorch_logit=1.385148 cpp_logit=1.385142 diff=5.36442e-06 | pytorch_prob=0.799816 cpp_prob=0.799816 diff=9.53674e-07 OK
+  sample  3: pytorch_logit=-1.140553 cpp_logit=-1.140556 diff=3.69549e-06 | pytorch_prob=0.242219 cpp_prob=0.242218 diff=6.70552e-07 OK
+  sample  4: pytorch_logit=-0.027437 cpp_logit=-0.027441 diff=4.60818e-06 | pytorch_prob=0.493141 cpp_prob=0.493140 diff=1.16229e-06 OK
+  sample  5: pytorch_logit=-1.074585 cpp_logit=-1.074588 diff=3.57628e-06 | pytorch_prob=0.254532 cpp_prob=0.254532 diff=6.55651e-07 OK
+  sample  6: pytorch_logit=0.275596 cpp_logit=0.275592 diff=3.9041e-06 | pytorch_prob=0.568466 cpp_prob=0.568465 diff=9.53674e-07 OK
+  sample  7: pytorch_logit=-1.327566 cpp_logit=-1.327569 diff=3.33786e-06 | pytorch_prob=0.209562 cpp_prob=0.209562 diff=5.66244e-07 OK
+  sample  8: pytorch_logit=-1.882879 cpp_logit=-1.882882 diff=2.98023e-06 | pytorch_prob=0.132059 cpp_prob=0.132058 diff=3.42727e-07 OK
+  sample  9: pytorch_logit=-0.791659 cpp_logit=-0.791663 diff=4.23193e-06 | pytorch_prob=0.311813 cpp_prob=0.311812 diff=9.23872e-07 OK
+  sample 10: pytorch_logit=-0.882854 cpp_logit=-0.882856 diff=2.74181e-06 | pytorch_prob=0.292587 cpp_prob=0.292586 diff=5.36442e-07 OK
+  sample 11: pytorch_logit=0.967659 cpp_logit=0.967654 diff=5.126e-06 | pytorch_prob=0.724653 cpp_prob=0.724652 diff=1.01328e-06 OK
+  sample 12: pytorch_logit=-1.773484 cpp_logit=-1.773486 diff=2.38419e-06 | pytorch_prob=0.145110 cpp_prob=0.145109 diff=2.98023e-07 OK
+  sample 13: pytorch_logit=-1.277529 cpp_logit=-1.277533 diff=3.45707e-06 | pytorch_prob=0.217971 cpp_prob=0.217971 diff=5.81145e-07 OK
+  sample 14: pytorch_logit=-1.227972 cpp_logit=-1.227976 diff=3.45707e-06 | pytorch_prob=0.226537 cpp_prob=0.226536 diff=6.10948e-07 OK
+  sample 15: pytorch_logit=5.900505 cpp_logit=5.900498 diff=6.67572e-06 | pytorch_prob=0.997269 cpp_prob=0.997269 diff=0 OK
 
-max_logit_diff=4.41074e-06 (tolerance 0.001)
-max_prob_diff=7.89762e-07 (tolerance 0.0001)
+max_logit_diff=6.67572e-06 (tolerance 0.001)
+max_prob_diff=1.16229e-06 (tolerance 0.0001)
 ORACLE DIFF PASSED: all 16 samples within tolerance

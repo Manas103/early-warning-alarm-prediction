@@ -18,10 +18,11 @@ def test_channel_count_and_names():
     assert N_CHANNELS == 24
     assert len(CHANNEL_NAMES) == 24
     assert len(set(CHANNEL_NAMES)) == 24  # all unique
-    assert CHANNEL_NAMES[0] == "pressure_01"
-    assert CHANNEL_NAMES[6] == "temperature_01"
-    assert CHANNEL_NAMES[12] == "flow_01"
-    assert CHANNEL_NAMES[18] == "vibration_01"
+    assert CHANNEL_NAMES[0] == "chamber1_pressure"
+    assert CHANNEL_NAMES[6] == "chamber2_pressure"
+    assert CHANNEL_NAMES[12] == "chamber3_pressure"
+    assert CHANNEL_NAMES[18] == "chamber4_pressure"
+    assert CHANNEL_NAMES[5] == "chamber1_endpoint"
 
 
 def test_generate_run_is_deterministic():

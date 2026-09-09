@@ -120,10 +120,11 @@ void test_contribution_ranks_the_deviating_channel_first() {
 void test_channel_names_are_unique_and_ordered() {
     std::printf("test_channel_names_are_unique_and_ordered\n");
     auto names = channel_names();
-    check(names[0] == "pressure_01", "first channel name is pressure_01");
-    check(names[6] == "temperature_01", "7th channel name is temperature_01");
-    check(names[12] == "flow_01", "13th channel name is flow_01");
-    check(names[18] == "vibration_01", "19th channel name is vibration_01");
+    check(names[0] == "chamber1_pressure", "first channel name is chamber1_pressure");
+    check(names[6] == "chamber2_pressure", "7th channel name is chamber2_pressure");
+    check(names[12] == "chamber3_pressure", "13th channel name is chamber3_pressure");
+    check(names[18] == "chamber4_pressure", "19th channel name is chamber4_pressure");
+    check(names[5] == "chamber1_endpoint", "6th channel name is chamber1_endpoint");
     bool all_unique = true;
     for (int i = 0; i < kNChannels; ++i)
         for (int j = i + 1; j < kNChannels; ++j)

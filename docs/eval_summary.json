@@ -3,7 +3,7 @@
   "debounce_k": 3,
   "n_upset": 40,
   "n_healthy": 40,
-  "n_caught": 37,
-  "median_lead_minutes": 33,
-  "n_false_alarms": 1
+  "n_caught": 39,
+  "median_lead_minutes": 36,
+  "n_false_alarms": 0
 }

@@ -4,724 +4,999 @@
     "debounce_k": 3,
     "n_upset": 40,
     "n_healthy": 40,
-    "n_caught": 37,
-    "median_lead_minutes": 33,
-    "n_false_alarms": 1
+    "n_caught": 39,
+    "median_lead_minutes": 36,
+    "n_false_alarms": 0
   },
   "runs": [
     {
-      "run_id": "upset_001_seed900001",
+      "run_id": "upset_000_seed900000",
       "is_upset_ground_truth": true,
-      "t0": 116,
+      "t0": 74,
       "alarm_minute": 179,
       "threshold": 0.9,
       "debounce_k": 3,
-      "confirmed_prediction_minute": 159,
+      "confirmed_prediction_minute": 138,
       "events": [
         {
-          "minute": 157,
-          "probability": 0.911548,
+          "minute": 136,
+          "probability": 0.903432,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 1.89032
+              "channel": "chamber4_gas_flow",
+              "score": 2.00876
             },
             {
-              "channel": "flow_04",
-              "score": 0.983345
+              "channel": "chamber3_pressure",
+              "score": 0.96142
             },
             {
-              "channel": "flow_03",
-              "score": 0.918363
+              "channel": "chamber3_endpoint",
+              "score": 0.863687
             },
             {
-              "channel": "vibration_05",
-              "score": 0.87154
+              "channel": "chamber1_oes_intensity",
+              "score": 0.850048
+            }
+          ]
+        },
+        {
+          "minute": 137,
+          "probability": 0.910322,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.05565
+            },
+            {
+              "channel": "chamber3_pressure",
+              "score": 0.944089
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.864786
+            },
+            {
+              "channel": "chamber1_oes_intensity",
+              "score": 0.850882
+            }
+          ]
+        },
+        {
+          "minute": 138,
+          "probability": 0.918322,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.10628
+            },
+            {
+              "channel": "chamber3_pressure",
+              "score": 0.934213
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.869752
+            },
+            {
+              "channel": "chamber1_rf_reflected",
+              "score": 0.854199
+            }
+          ]
+        },
+        {
+          "minute": 139,
+          "probability": 0.927126,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.14698
+            },
+            {
+              "channel": "chamber3_pressure",
+              "score": 0.920372
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.909784
+            },
+            {
+              "channel": "chamber1_rf_reflected",
+              "score": 0.870739
+            }
+          ]
+        },
+        {
+          "minute": 140,
+          "probability": 0.936356,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.20539
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.923047
+            },
+            {
+              "channel": "chamber3_pressure",
+              "score": 0.908024
+            },
+            {
+              "channel": "chamber1_rf_reflected",
+              "score": 0.8723
+            }
+          ]
+        },
+        {
+          "minute": 141,
+          "probability": 0.94528,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.26089
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.926569
+            },
+            {
+              "channel": "chamber3_pressure",
+              "score": 0.914179
+            },
+            {
+              "channel": "chamber1_oes_intensity",
+              "score": 0.868962
+            }
+          ]
+        },
+        {
+          "minute": 142,
+          "probability": 0.952279,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.30336
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.944562
+            },
+            {
+              "channel": "chamber3_pressure",
+              "score": 0.916786
+            },
+            {
+              "channel": "chamber1_oes_intensity",
+              "score": 0.883248
+            }
+          ]
+        },
+        {
+          "minute": 143,
+          "probability": 0.957766,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.36025
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.957309
+            },
+            {
+              "channel": "chamber3_pressure",
+              "score": 0.921398
+            },
+            {
+              "channel": "chamber1_oes_intensity",
+              "score": 0.893916
+            }
+          ]
+        },
+        {
+          "minute": 144,
+          "probability": 0.962167,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.42883
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.959027
+            },
+            {
+              "channel": "chamber3_pressure",
+              "score": 0.92805
+            },
+            {
+              "channel": "chamber1_oes_intensity",
+              "score": 0.920715
+            }
+          ]
+        },
+        {
+          "minute": 145,
+          "probability": 0.965692,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.47088
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.953752
+            },
+            {
+              "channel": "chamber3_pressure",
+              "score": 0.926182
+            },
+            {
+              "channel": "chamber1_rf_reflected",
+              "score": 0.916615
+            }
+          ]
+        },
+        {
+          "minute": 146,
+          "probability": 0.968856,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.52308
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.940679
+            },
+            {
+              "channel": "chamber1_rf_reflected",
+              "score": 0.91844
+            },
+            {
+              "channel": "chamber3_pressure",
+              "score": 0.897524
+            }
+          ]
+        },
+        {
+          "minute": 147,
+          "probability": 0.972031,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.56531
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.948769
+            },
+            {
+              "channel": "chamber1_rf_reflected",
+              "score": 0.930171
+            },
+            {
+              "channel": "chamber1_oes_intensity",
+              "score": 0.881743
+            }
+          ]
+        },
+        {
+          "minute": 148,
+          "probability": 0.975236,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.60278
+            },
+            {
+              "channel": "chamber1_rf_reflected",
+              "score": 0.961155
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.942156
+            },
+            {
+              "channel": "chamber1_oes_intensity",
+              "score": 0.872048
+            }
+          ]
+        },
+        {
+          "minute": 149,
+          "probability": 0.978564,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.65679
+            },
+            {
+              "channel": "chamber1_rf_reflected",
+              "score": 0.988105
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.908329
+            },
+            {
+              "channel": "chamber1_oes_intensity",
+              "score": 0.848335
+            }
+          ]
+        },
+        {
+          "minute": 150,
+          "probability": 0.981992,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.71909
+            },
+            {
+              "channel": "chamber1_rf_reflected",
+              "score": 1.0134
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.895516
+            },
+            {
+              "channel": "chamber1_oes_intensity",
+              "score": 0.844526
+            }
+          ]
+        },
+        {
+          "minute": 151,
+          "probability": 0.985356,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.7792
+            },
+            {
+              "channel": "chamber1_rf_reflected",
+              "score": 1.04897
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.888057
+            },
+            {
+              "channel": "chamber1_oes_intensity",
+              "score": 0.834119
+            }
+          ]
+        },
+        {
+          "minute": 152,
+          "probability": 0.988323,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.85955
+            },
+            {
+              "channel": "chamber1_rf_reflected",
+              "score": 1.05919
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.896326
+            },
+            {
+              "channel": "chamber1_oes_intensity",
+              "score": 0.827826
+            }
+          ]
+        },
+        {
+          "minute": 153,
+          "probability": 0.990867,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 2.94759
+            },
+            {
+              "channel": "chamber1_rf_reflected",
+              "score": 1.08137
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.891578
+            },
+            {
+              "channel": "chamber1_oes_intensity",
+              "score": 0.828715
+            }
+          ]
+        },
+        {
+          "minute": 154,
+          "probability": 0.992862,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 3.00945
+            },
+            {
+              "channel": "chamber1_rf_reflected",
+              "score": 1.12893
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.884963
+            },
+            {
+              "channel": "chamber4_endpoint",
+              "score": 0.850953
+            }
+          ]
+        },
+        {
+          "minute": 155,
+          "probability": 0.994323,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 3.06027
+            },
+            {
+              "channel": "chamber1_rf_reflected",
+              "score": 1.14656
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.880571
+            },
+            {
+              "channel": "chamber1_oes_intensity",
+              "score": 0.842975
+            }
+          ]
+        },
+        {
+          "minute": 156,
+          "probability": 0.995428,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 3.09478
+            },
+            {
+              "channel": "chamber1_rf_reflected",
+              "score": 1.1473
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.875073
+            },
+            {
+              "channel": "chamber1_oes_intensity",
+              "score": 0.834511
+            }
+          ]
+        },
+        {
+          "minute": 157,
+          "probability": 0.996296,
+          "contributors": [
+            {
+              "channel": "chamber4_gas_flow",
+              "score": 3.13925
+            },
+            {
+              "channel": "chamber1_rf_reflected",
+              "score": 1.15694
+            },
+            {
+              "channel": "chamber3_endpoint",
+              "score": 0.864421
+            },
+            {
+              "channel": "chamber1_oes_intensity",
+              "score": 0.835136
             }
           ]
         },
         {
           "minute": 158,
-          "probability": 0.923883,
+          "probability": 0.996953,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 1.96395
+              "channel": "chamber4_gas_flow",
+              "score": 3.16929
             },
             {
-              "channel": "flow_04",
-              "score": 1.00621
+              "channel": "chamber1_rf_reflected",
+              "score": 1.1888
             },
             {
-              "channel": "flow_03",
-              "score": 0.95138
+              "channel": "chamber3_endpoint",
+              "score": 0.852453
             },
             {
-              "channel": "vibration_05",
-              "score": 0.87244
+              "channel": "chamber1_oes_intensity",
+              "score": 0.831367
             }
           ]
         },
         {
           "minute": 159,
-          "probability": 0.93506,
+          "probability": 0.997459,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 2.04752
+              "channel": "chamber4_gas_flow",
+              "score": 3.20751
             },
             {
-              "channel": "flow_04",
-              "score": 1.01276
+              "channel": "chamber1_rf_reflected",
+              "score": 1.2334
             },
             {
-              "channel": "flow_03",
-              "score": 0.955176
+              "channel": "chamber1_oes_intensity",
+              "score": 0.84634
             },
             {
-              "channel": "vibration_05",
-              "score": 0.839424
+              "channel": "chamber3_endpoint",
+              "score": 0.82575
             }
           ]
         },
         {
           "minute": 160,
-          "probability": 0.944895,
+          "probability": 0.997868,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 2.11182
+              "channel": "chamber4_gas_flow",
+              "score": 3.27973
             },
             {
-              "channel": "flow_04",
-              "score": 1.0208
+              "channel": "chamber1_rf_reflected",
+              "score": 1.23703
             },
             {
-              "channel": "flow_03",
-              "score": 0.948815
+              "channel": "chamber1_oes_intensity",
+              "score": 0.826418
             },
             {
-              "channel": "vibration_05",
-              "score": 0.838761
+              "channel": "chamber3_endpoint",
+              "score": 0.80197
             }
           ]
         },
         {
           "minute": 161,
-          "probability": 0.953911,
+          "probability": 0.998173,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 2.17906
+              "channel": "chamber4_gas_flow",
+              "score": 3.34149
             },
             {
-              "channel": "flow_04",
-              "score": 1.05229
+              "channel": "chamber1_rf_reflected",
+              "score": 1.2422
             },
             {
-              "channel": "flow_03",
-              "score": 0.972126
+              "channel": "chamber1_oes_intensity",
+              "score": 0.824147
             },
             {
-              "channel": "vibration_05",
-              "score": 0.820597
+              "channel": "chamber3_endpoint",
+              "score": 0.786626
             }
           ]
         },
         {
           "minute": 162,
-          "probability": 0.962246,
+          "probability": 0.998395,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 2.22866
+              "channel": "chamber4_gas_flow",
+              "score": 3.42146
             },
             {
-              "channel": "flow_04",
-              "score": 1.07919
+              "channel": "chamber1_rf_reflected",
+              "score": 1.25195
             },
             {
-              "channel": "flow_03",
-              "score": 1.00737
+              "channel": "chamber1_oes_intensity",
+              "score": 0.850023
             },
             {
-              "channel": "vibration_02",
-              "score": 0.807805
+              "channel": "chamber2_oes_intensity",
+              "score": 0.786977
             }
           ]
         },
         {
           "minute": 163,
-          "probability": 0.969508,
+          "probability": 0.99853,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 2.29009
+              "channel": "chamber4_gas_flow",
+              "score": 3.47853
             },
             {
-              "channel": "flow_04",
-              "score": 1.11763
+              "channel": "chamber1_rf_reflected",
+              "score": 1.24075
             },
             {
-              "channel": "flow_03",
-              "score": 1.0204
+              "channel": "chamber1_oes_intensity",
+              "score": 0.846231
             },
             {
-              "channel": "vibration_02",
-              "score": 0.81877
+              "channel": "chamber2_oes_intensity",
+              "score": 0.787915
             }
           ]
         },
         {
           "minute": 164,
-          "probability": 0.975415,
+          "probability": 0.998616,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 2.34288
+              "channel": "chamber4_gas_flow",
+              "score": 3.55911
             },
             {
-              "channel": "flow_04",
-              "score": 1.13519
+              "channel": "chamber1_rf_reflected",
+              "score": 1.23387
             },
             {
-              "channel": "flow_03",
-              "score": 1.06253
+              "channel": "chamber1_oes_intensity",
+              "score": 0.853032
             },
             {
-              "channel": "temperature_04",
-              "score": 0.836355
+              "channel": "chamber2_oes_intensity",
+              "score": 0.807733
             }
           ]
         },
         {
           "minute": 165,
-          "probability": 0.980132,
+          "probability": 0.998673,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 2.42359
+              "channel": "chamber4_gas_flow",
+              "score": 3.63937
             },
             {
-              "channel": "flow_04",
-              "score": 1.14372
+              "channel": "chamber1_rf_reflected",
+              "score": 1.23684
             },
             {
-              "channel": "flow_03",
-              "score": 1.09474
+              "channel": "chamber1_oes_intensity",
+              "score": 0.853491
             },
             {
-              "channel": "temperature_04",
-              "score": 0.853184
+              "channel": "chamber2_oes_intensity",
+              "score": 0.830405
             }
           ]
         },
         {
           "minute": 166,
-          "probability": 0.984022,
+          "probability": 0.998726,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 2.50951
+              "channel": "chamber4_gas_flow",
+              "score": 3.70971
             },
             {
-              "channel": "flow_04",
-              "score": 1.17416
+              "channel": "chamber1_rf_reflected",
+              "score": 1.2202
             },
             {
-              "channel": "flow_03",
-              "score": 1.1465
+              "channel": "chamber1_oes_intensity",
+              "score": 0.861275
             },
             {
-              "channel": "temperature_04",
-              "score": 0.856995
+              "channel": "chamber2_oes_intensity",
+              "score": 0.846771
             }
           ]
         },
         {
           "minute": 167,
-          "probability": 0.987021,
+          "probability": 0.998809,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 2.58268
+              "channel": "chamber4_gas_flow",
+              "score": 3.76536
             },
             {
-              "channel": "flow_04",
-              "score": 1.20552
+              "channel": "chamber1_rf_reflected",
+              "score": 1.24648
             },
             {
-              "channel": "flow_03",
-              "score": 1.18459
+              "channel": "chamber2_oes_intensity",
+              "score": 0.878042
             },
             {
-              "channel": "temperature_04",
-              "score": 0.87907
+              "channel": "chamber4_endpoint",
+              "score": 0.860656
             }
           ]
         },
         {
           "minute": 168,
-          "probability": 0.989357,
+          "probability": 0.998925,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 2.65932
+              "channel": "chamber4_gas_flow",
+              "score": 3.81645
             },
             {
-              "channel": "flow_04",
-              "score": 1.23478
+              "channel": "chamber1_rf_reflected",
+              "score": 1.26479
             },
             {
-              "channel": "flow_03",
-              "score": 1.2016
+              "channel": "chamber2_oes_intensity",
+              "score": 0.874643
             },
             {
-              "channel": "temperature_04",
-              "score": 0.885018
+              "channel": "chamber4_endpoint",
+              "score": 0.867011
             }
           ]
         },
         {
           "minute": 169,
-          "probability": 0.991219,
+          "probability": 0.999039,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 2.73112
+              "channel": "chamber4_gas_flow",
+              "score": 3.87032
             },
             {
-              "channel": "flow_04",
-              "score": 1.27561
+              "channel": "chamber1_rf_reflected",
+              "score": 1.28204
             },
             {
-              "channel": "flow_03",
-              "score": 1.21871
+              "channel": "chamber2_oes_intensity",
+              "score": 0.894183
             },
             {
-              "channel": "temperature_04",
-              "score": 0.903088
+              "channel": "chamber4_endpoint",
+              "score": 0.884491
             }
           ]
         },
         {
           "minute": 170,
-          "probability": 0.99285,
+          "probability": 0.999148,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 2.82678
+              "channel": "chamber4_gas_flow",
+              "score": 3.92607
             },
             {
-              "channel": "flow_04",
-              "score": 1.30651
+              "channel": "chamber1_rf_reflected",
+              "score": 1.28958
             },
             {
-              "channel": "flow_03",
-              "score": 1.2457
+              "channel": "chamber2_oes_intensity",
+              "score": 0.884546
             },
             {
-              "channel": "vibration_02",
-              "score": 0.919166
+              "channel": "chamber4_endpoint",
+              "score": 0.883252
             }
           ]
         },
         {
           "minute": 171,
-          "probability": 0.994205,
+          "probability": 0.999251,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 2.92949
+              "channel": "chamber4_gas_flow",
+              "score": 4.00213
             },
             {
-              "channel": "flow_04",
-              "score": 1.33223
+              "channel": "chamber1_rf_reflected",
+              "score": 1.29029
             },
             {
-              "channel": "flow_03",
-              "score": 1.28603
+              "channel": "chamber4_endpoint",
+              "score": 0.885495
             },
             {
-              "channel": "temperature_04",
-              "score": 0.934219
+              "channel": "chamber2_oes_intensity",
+              "score": 0.868197
             }
           ]
         },
         {
           "minute": 172,
-          "probability": 0.995395,
+          "probability": 0.999338,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 3.03604
+              "channel": "chamber4_gas_flow",
+              "score": 4.0827
             },
             {
-              "channel": "flow_04",
-              "score": 1.33977
+              "channel": "chamber1_rf_reflected",
+              "score": 1.29528
             },
             {
-              "channel": "flow_03",
-              "score": 1.33305
+              "channel": "chamber4_endpoint",
+              "score": 0.893359
             },
             {
-              "channel": "temperature_04",
-              "score": 0.954985
+              "channel": "chamber2_oes_intensity",
+              "score": 0.873807
             }
           ]
         },
         {
           "minute": 173,
-          "probability": 0.996462,
+          "probability": 0.999404,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 3.14447
+              "channel": "chamber4_gas_flow",
+              "score": 4.15804
             },
             {
-              "channel": "flow_03",
-              "score": 1.36613
+              "channel": "chamber1_rf_reflected",
+              "score": 1.31874
             },
             {
-              "channel": "flow_04",
-              "score": 1.36507
+              "channel": "chamber4_endpoint",
+              "score": 0.894086
             },
             {
-              "channel": "temperature_04",
-              "score": 0.971374
+              "channel": "chamber2_oes_intensity",
+              "score": 0.882938
             }
           ]
         },
         {
           "minute": 174,
-          "probability": 0.997424,
+          "probability": 0.999472,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 3.26901
+              "channel": "chamber4_gas_flow",
+              "score": 4.1978
             },
             {
-              "channel": "flow_03",
-              "score": 1.4155
+              "channel": "chamber1_rf_reflected",
+              "score": 1.30335
             },
             {
-              "channel": "flow_04",
-              "score": 1.38724
+              "channel": "chamber1_oes_intensity",
+              "score": 0.888202
             },
             {
-              "channel": "temperature_04",
-              "score": 0.978179
+              "channel": "chamber4_endpoint",
+              "score": 0.886157
             }
           ]
         },
         {
           "minute": 175,
-          "probability": 0.99817,
+          "probability": 0.999524,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 3.36661
+              "channel": "chamber4_gas_flow",
+              "score": 4.25961
             },
             {
-              "channel": "flow_03",
-              "score": 1.44657
+              "channel": "chamber1_rf_reflected",
+              "score": 1.31462
             },
             {
-              "channel": "flow_04",
-              "score": 1.41029
+              "channel": "chamber2_endpoint",
+              "score": 0.886541
             },
             {
-              "channel": "temperature_04",
-              "score": 0.986397
+              "channel": "chamber4_endpoint",
+              "score": 0.881061
             }
           ]
         },
         {
           "minute": 176,
-          "probability": 0.998719,
+          "probability": 0.99956,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 3.46667
+              "channel": "chamber4_gas_flow",
+              "score": 4.32686
             },
             {
-              "channel": "flow_03",
-              "score": 1.4771
+              "channel": "chamber1_rf_reflected",
+              "score": 1.34763
             },
             {
-              "channel": "flow_04",
-              "score": 1.42216
+              "channel": "chamber2_endpoint",
+              "score": 0.893566
             },
             {
-              "channel": "temperature_04",
-              "score": 0.974464
+              "channel": "chamber2_oes_intensity",
+              "score": 0.874933
             }
           ]
         },
         {
           "minute": 177,
-          "probability": 0.999112,
+          "probability": 0.999586,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 3.57468
+              "channel": "chamber4_gas_flow",
+              "score": 4.37511
             },
             {
-              "channel": "flow_03",
-              "score": 1.52156
+              "channel": "chamber1_rf_reflected",
+              "score": 1.37205
             },
             {
-              "channel": "flow_04",
-              "score": 1.44662
+              "channel": "chamber2_endpoint",
+              "score": 0.902737
             },
             {
-              "channel": "vibration_02",
-              "score": 0.960385
+              "channel": "chamber2_oes_intensity",
+              "score": 0.888988
             }
           ]
         },
         {
           "minute": 178,
-          "probability": 0.999368,
+          "probability": 0.999593,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 3.68953
+              "channel": "chamber4_gas_flow",
+              "score": 4.43418
             },
             {
-              "channel": "flow_03",
-              "score": 1.57649
+              "channel": "chamber1_rf_reflected",
+              "score": 1.40257
             },
             {
-              "channel": "flow_04",
-              "score": 1.48294
+              "channel": "chamber2_endpoint",
+              "score": 0.903022
             },
             {
-              "channel": "vibration_02",
-              "score": 0.989306
+              "channel": "chamber2_oes_intensity",
+              "score": 0.865857
             }
           ]
         },
         {
           "minute": 179,
-          "probability": 0.999528,
+          "probability": 0.999572,
           "contributors": [
             {
-              "channel": "temperature_01",
-              "score": 3.80624
+              "channel": "chamber4_gas_flow",
+              "score": 4.49221
             },
             {
-              "channel": "flow_03",
-              "score": 1.62212
+              "channel": "chamber1_rf_reflected",
+              "score": 1.43725
             },
             {
-              "channel": "flow_04",
-              "score": 1.53711
+              "channel": "chamber2_endpoint",
+              "score": 0.89417
             },
             {
-              "channel": "vibration_02",
-              "score": 0.966141
+              "channel": "chamber2_oes_intensity",
+              "score": 0.862211
             }
           ]
         }
       ]
     },
     {
-      "run_id": "upset_000_seed900000",
+      "run_id": "upset_022_seed900022",
       "is_upset_ground_truth": true,
-      "t0": 100,
+      "t0": 78,
       "alarm_minute": 179,
       "threshold": 0.9,
       "debounce_k": 3,
       "confirmed_prediction_minute": null,
       "events": []
-    },
-    {
-      "run_id": "healthy_059_seed1000019",
-      "is_upset_ground_truth": false,
-      "t0": null,
-      "alarm_minute": null,
-      "threshold": 0.9,
-      "debounce_k": 3,
-      "confirmed_prediction_minute": 61,
-      "events": [
-        {
-          "minute": 59,
-          "probability": 0.940387,
-          "contributors": [
-            {
-              "channel": "vibration_05",
-              "score": 0.90532
-            },
-            {
-              "channel": "pressure_05",
-              "score": 0.882829
-            },
-            {
-              "channel": "pressure_03",
-              "score": 0.803033
-            },
-            {
-              "channel": "vibration_06",
-              "score": 0.775028
-            }
-          ]
-        },
-        {
-          "minute": 60,
-          "probability": 0.942486,
-          "contributors": [
-            {
-              "channel": "vibration_05",
-              "score": 0.900076
-            },
-            {
-              "channel": "pressure_05",
-              "score": 0.887714
-            },
-            {
-              "channel": "pressure_03",
-              "score": 0.795102
-            },
-            {
-              "channel": "vibration_06",
-              "score": 0.768056
-            }
-          ]
-        },
-        {
-          "minute": 61,
-          "probability": 0.943935,
-          "contributors": [
-            {
-              "channel": "pressure_05",
-              "score": 0.90017
-            },
-            {
-              "channel": "vibration_05",
-              "score": 0.896956
-            },
-            {
-              "channel": "pressure_03",
-              "score": 0.790682
-            },
-            {
-              "channel": "vibration_06",
-              "score": 0.780825
-            }
-          ]
-        },
-        {
-          "minute": 62,
-          "probability": 0.944849,
-          "contributors": [
-            {
-              "channel": "vibration_05",
-              "score": 0.887813
-            },
-            {
-              "channel": "pressure_05",
-              "score": 0.883682
-            },
-            {
-              "channel": "pressure_03",
-              "score": 0.790948
-            },
-            {
-              "channel": "vibration_06",
-              "score": 0.790691
-            }
-          ]
-        },
-        {
-          "minute": 63,
-          "probability": 0.941313,
-          "contributors": [
-            {
-              "channel": "pressure_05",
-              "score": 0.887154
-            },
-            {
-              "channel": "vibration_05",
-              "score": 0.860033
-            },
-            {
-              "channel": "vibration_06",
-              "score": 0.795589
-            },
-            {
-              "channel": "pressure_03",
-              "score": 0.793833
-            }
-          ]
-        },
-        {
-          "minute": 64,
-          "probability": 0.93409,
-          "contributors": [
-            {
-              "channel": "pressure_05",
-              "score": 0.889245
-            },
-            {
-              "channel": "vibration_05",
-              "score": 0.848507
-            },
-            {
-              "channel": "vibration_06",
-              "score": 0.800994
-            },
-            {
-              "channel": "pressure_03",
-              "score": 0.77273
-            }
-          ]
-        },
-        {
-          "minute": 65,
-          "probability": 0.923191,
-          "contributors": [
-            {
-              "channel": "pressure_05",
-              "score": 0.879594
-            },
-            {
-              "channel": "vibration_05",
-              "score": 0.851211
-            },
-            {
-              "channel": "vibration_06",
-              "score": 0.781963
-            },
-            {
-              "channel": "temperature_02",
-              "score": 0.762521
-            }
-          ]
-        },
-        {
-          "minute": 66,
-          "probability": 0.910811,
-          "contributors": [
-            {
-              "channel": "pressure_05",
-              "score": 0.875787
-            },
-            {
-              "channel": "vibration_05",
-              "score": 0.8676
-            },
-            {
-              "channel": "vibration_06",
-              "score": 0.770255
-            },
-            {
-              "channel": "temperature_02",
-              "score": 0.762067
-            }
-          ]
-        }
-      ]
     },
     {
       "run_id": "healthy_040_seed1000000",

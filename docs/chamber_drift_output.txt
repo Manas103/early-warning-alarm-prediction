@@ -1,0 +1,90 @@
+Chamber-to-chamber drift check: eval harness results
+k_sigma=4.5  calibration_runs=40 (clean only)
+sibling_spread (per quantity, engineering units): pressure=0.3685, rf_forward=0.6567, rf_reflected=0.2726, gas_flow=0.2476, oes_intensity=7.678, endpoint=2.348
+
+--- seeded-drift runs ---
+  seed= 980000 injected=chamber4_rf_forward (+1.09 sigma)  flagged=[chamber4_rf_forward(z=+8.82)]  caught=True
+  seed= 980001 injected=chamber1_rf_forward (+0.92 sigma)  flagged=[chamber1_rf_forward(z=+7.31)]  caught=True
+  seed= 980002 injected=chamber2_gas_flow (+0.96 sigma)  flagged=[chamber2_gas_flow(z=+5.26)]  caught=True
+  seed= 980003 injected=chamber4_gas_flow (+1.55 sigma)  flagged=[chamber4_gas_flow(z=+8.27)]  caught=True
+  seed= 980004 injected=chamber3_gas_flow (+0.50 sigma)  flagged=[none]  caught=False
+  seed= 980005 injected=chamber2_oes_intensity (+1.50 sigma)  flagged=[chamber1_oes_intensity(z=-4.71), chamber2_oes_intensity(z=+11.41)]  caught=True
+  seed= 980006 injected=chamber2_gas_flow (+0.54 sigma)  flagged=[none]  caught=False
+  seed= 980007 injected=chamber1_pressure (+0.86 sigma)  flagged=[none]  caught=False
+  seed= 980008 injected=chamber1_rf_reflected (+1.58 sigma)  flagged=[chamber1_rf_reflected(z=+13.53), chamber2_rf_reflected(z=-5.43)]  caught=True
+  seed= 980009 injected=chamber3_rf_forward (+0.44 sigma)  flagged=[none]  caught=False
+  seed= 980010 injected=chamber1_rf_forward (+0.42 sigma)  flagged=[none]  caught=False
+  seed= 980011 injected=chamber2_endpoint (+1.27 sigma)  flagged=[chamber2_endpoint(z=+6.17)]  caught=True
+  seed= 980012 injected=chamber2_gas_flow (+0.45 sigma)  flagged=[none]  caught=False
+  seed= 980013 injected=chamber4_endpoint (+0.97 sigma)  flagged=[chamber4_endpoint(z=+4.74)]  caught=True
+  seed= 980014 injected=chamber2_oes_intensity (+0.74 sigma)  flagged=[none]  caught=False
+  seed= 980015 injected=chamber1_rf_reflected (+1.43 sigma)  flagged=[chamber1_rf_reflected(z=+13.65), chamber2_rf_reflected(z=-5.72), chamber3_rf_reflected(z=-5.55)]  caught=True
+  seed= 980016 injected=chamber3_pressure (+1.46 sigma)  flagged=[none]  caught=False
+  seed= 980017 injected=chamber2_pressure (+1.48 sigma)  flagged=[none]  caught=False
+  seed= 980018 injected=chamber4_rf_forward (+0.51 sigma)  flagged=[none]  caught=False
+  seed= 980019 injected=chamber2_pressure (+1.07 sigma)  flagged=[none]  caught=False
+  seed= 980020 injected=chamber4_rf_reflected (+1.15 sigma)  flagged=[chamber4_rf_reflected(z=+9.03)]  caught=True
+  seed= 980021 injected=chamber4_pressure (+1.29 sigma)  flagged=[chamber4_pressure(z=+4.86)]  caught=True
+  seed= 980022 injected=chamber2_rf_reflected (+0.49 sigma)  flagged=[chamber2_rf_reflected(z=+5.72)]  caught=True
+  seed= 980023 injected=chamber4_pressure (+0.83 sigma)  flagged=[none]  caught=False
+  seed= 980024 injected=chamber4_rf_forward (+0.86 sigma)  flagged=[chamber4_rf_forward(z=+6.02)]  caught=True
+  seed= 980025 injected=chamber4_pressure (+1.06 sigma)  flagged=[none]  caught=False
+  seed= 980026 injected=chamber4_rf_reflected (+0.50 sigma)  flagged=[none]  caught=False
+  seed= 980027 injected=chamber2_rf_reflected (+0.78 sigma)  flagged=[chamber2_rf_reflected(z=+8.88)]  caught=True
+  seed= 980028 injected=chamber4_endpoint (+1.35 sigma)  flagged=[chamber4_endpoint(z=+6.97)]  caught=True
+  seed= 980029 injected=chamber3_pressure (+0.50 sigma)  flagged=[none]  caught=False
+  seed= 980030 injected=chamber4_endpoint (+0.84 sigma)  flagged=[none]  caught=False
+  seed= 980031 injected=chamber3_pressure (+1.42 sigma)  flagged=[chamber3_pressure(z=+4.54)]  caught=True
+  seed= 980032 injected=chamber1_rf_reflected (+1.02 sigma)  flagged=[chamber1_rf_reflected(z=+8.61)]  caught=True
+  seed= 980033 injected=chamber3_rf_reflected (+1.29 sigma)  flagged=[chamber3_rf_reflected(z=+8.72)]  caught=True
+  seed= 980034 injected=chamber1_endpoint (+0.73 sigma)  flagged=[chamber1_endpoint(z=+4.53)]  caught=True
+  seed= 980035 injected=chamber2_endpoint (+1.48 sigma)  flagged=[chamber2_endpoint(z=+8.70), chamber4_endpoint(z=-4.70)]  caught=True
+  seed= 980036 injected=chamber3_rf_reflected (+1.00 sigma)  flagged=[chamber3_rf_reflected(z=+6.61)]  caught=True
+  seed= 980037 injected=chamber2_endpoint (+1.19 sigma)  flagged=[chamber2_endpoint(z=+6.72)]  caught=True
+  seed= 980038 injected=chamber1_gas_flow (+0.82 sigma)  flagged=[none]  caught=False
+  seed= 980039 injected=chamber2_pressure (+0.62 sigma)  flagged=[none]  caught=False
+
+--- clean multi-chamber runs ---
+  seed=1080000  flagged=[none]  false_flag=False
+  seed=1080001  flagged=[none]  false_flag=False
+  seed=1080002  flagged=[none]  false_flag=False
+  seed=1080003  flagged=[none]  false_flag=False
+  seed=1080004  flagged=[none]  false_flag=False
+  seed=1080005  flagged=[none]  false_flag=False
+  seed=1080006  flagged=[none]  false_flag=False
+  seed=1080007  flagged=[none]  false_flag=False
+  seed=1080008  flagged=[none]  false_flag=False
+  seed=1080009  flagged=[none]  false_flag=False
+  seed=1080010  flagged=[none]  false_flag=False
+  seed=1080011  flagged=[none]  false_flag=False
+  seed=1080012  flagged=[none]  false_flag=False
+  seed=1080013  flagged=[none]  false_flag=False
+  seed=1080014  flagged=[none]  false_flag=False
+  seed=1080015  flagged=[none]  false_flag=False
+  seed=1080016  flagged=[none]  false_flag=False
+  seed=1080017  flagged=[none]  false_flag=False
+  seed=1080018  flagged=[none]  false_flag=False
+  seed=1080019  flagged=[none]  false_flag=False
+  seed=1080020  flagged=[none]  false_flag=False
+  seed=1080021  flagged=[none]  false_flag=False
+  seed=1080022  flagged=[none]  false_flag=False
+  seed=1080023  flagged=[none]  false_flag=False
+  seed=1080024  flagged=[none]  false_flag=False
+  seed=1080025  flagged=[none]  false_flag=False
+  seed=1080026  flagged=[none]  false_flag=False
+  seed=1080027  flagged=[none]  false_flag=False
+  seed=1080028  flagged=[none]  false_flag=False
+  seed=1080029  flagged=[none]  false_flag=False
+  seed=1080030  flagged=[none]  false_flag=False
+  seed=1080031  flagged=[none]  false_flag=False
+  seed=1080032  flagged=[none]  false_flag=False
+  seed=1080033  flagged=[none]  false_flag=False
+  seed=1080034  flagged=[none]  false_flag=False
+  seed=1080035  flagged=[none]  false_flag=False
+  seed=1080036  flagged=[none]  false_flag=False
+  seed=1080037  flagged=[none]  false_flag=False
+  seed=1080038  flagged=[none]  false_flag=False
+  seed=1080039  flagged=[none]  false_flag=False
+
+seeded drifts caught: 22/40
+false flags over clean multi-chamber runs: 0/40
